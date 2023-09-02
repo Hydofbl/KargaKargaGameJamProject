@@ -526,7 +526,6 @@ GameObject:
   - component: {fileID: 157792778}
   - component: {fileID: 157792777}
   - component: {fileID: 157792776}
-  - component: {fileID: 157792780}
   - component: {fileID: 157792779}
   m_Layer: 0
   m_Name: Player
@@ -617,7 +616,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MovementSpeed: 12
   JumpForce: 16
-  JumpHeightModifier: 0.4
+  JumpHeightModifier: 0.5
   CanJump: 0
   JumpPressedRemember: 0
   JumpPressedRememberTime: 0.2
@@ -699,13 +698,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   groundLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   climbLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   deathLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
   onGround: 0
   onWall: 0
   onRightWall: 0
@@ -718,19 +717,6 @@ MonoBehaviour:
   leftOffset: {x: -0.25, y: 0}
   midOffset: {x: 0, y: 0}
   debugCollisionColor: {r: 1, g: 0, b: 0, a: 1}
---- !u!114 &157792780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157792773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbd4be67ba024b6449b37c0aa8255e7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fallMultiplier: 2.5
 --- !u!1 &184041864
 GameObject:
   m_ObjectHideFlags: 0
@@ -2207,6 +2193,7 @@ GameObject:
   - component: {fileID: 1444767854}
   - component: {fileID: 1444767853}
   - component: {fileID: 1444767857}
+  - component: {fileID: 1444767858}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2294,13 +2281,13 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1
-    height: 1
+    width: 0.99999994
+    height: 0.9996604
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4.285714
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -2365,6 +2352,30 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1444767858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444767852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c88f5cead0c0b2a4eb05b5900433f8d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 1
+  m_AssetsPPU: 21
+  m_RefResolutionX: 320
+  m_RefResolutionY: 180
+  m_CropFrame: 4
+  m_GridSnapping: 0
+  m_FilterMode: 0
+  m_UpscaleRT: 0
+  m_PixelSnapping: 0
+  m_CropFrameX: 0
+  m_CropFrameY: 0
+  m_StretchFill: 0
 --- !u!1 &1491755392
 GameObject:
   m_ObjectHideFlags: 0
