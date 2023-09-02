@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fc5e00f0e6c6cf04796debb3327c5869
+guid: d7dd18a05d6acd44f9736f19d6f0d894
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -165,91 +165,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: CharacterSleeping_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 38
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd7b05d042d2ffc49bb621a03c8f9aa0
-      internalID: -657858615
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CharacterSleeping_1
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 0
-        width: 38
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1dd5057e04023574ebc6cc4939b020a8
-      internalID: -1340294712
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CharacterSleeping_2
-      rect:
-        serializedVersion: 2
-        x: 76
-        y: 0
-        width: 38
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 192c0af6925ffa749a584b63c5504134
-      internalID: -140750667
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CharacterSleeping_3
-      rect:
-        serializedVersion: 2
-        x: 114
-        y: 0
-        width: 38
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8cb0cc93b1e116c4d992e77623d72fa5
-      internalID: -206140368
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -260,11 +176,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      CharacterSleeping_0: -657858615
-      CharacterSleeping_1: -1340294712
-      CharacterSleeping_2: -140750667
-      CharacterSleeping_3: -206140368
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
