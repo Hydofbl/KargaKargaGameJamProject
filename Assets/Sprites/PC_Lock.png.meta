@@ -71,7 +71,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -181,8 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7cd5b105befce641ba783b935c608eb
-      internalID: 952677856
+      spriteID: 6cc1336980f78e84aa5f637554bbfa6b
+      internalID: 114357969
       vertices: []
       indices: 
       edges: []
@@ -202,8 +202,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 198f4531246e72c499ecdad9d8bede7c
-      internalID: -355831281
+      spriteID: b2311352f975721479c760cd1a6d5b77
+      internalID: -444791654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Lock_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 819d1a0757d99924d80324b0d8a7dee9
+      internalID: 315281689
       vertices: []
       indices: 
       edges: []
@@ -219,8 +240,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PC_Lock_0: 952677856
-      PC_Lock_1: -355831281
+      PC_Lock_0: 114357969
+      PC_Lock_1: -444791654
+      PC_Lock_2: 315281689
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
