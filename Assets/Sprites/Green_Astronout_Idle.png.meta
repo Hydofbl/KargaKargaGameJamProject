@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e4ff3a5b72e5c7c4dafaf21f27db3c37
+guid: 40351f27d34822544bf76550ba110986
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -167,7 +167,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Character_Walk_0
+      name: Green_Astronout_Idle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -181,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a2637594a5091e458d361c193e2b3bf
-      internalID: 985424013
+      spriteID: 0f544ae207fcb8345ae680892c8c9f75
+      internalID: -1356354845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_Walk_1
+      name: Green_Astronout_Idle_1
       rect:
         serializedVersion: 2
         x: 24
@@ -202,50 +202,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 791a32824cb50cd4dbdd55edf1503331
-      internalID: -1979473767
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_Walk_2
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27692b0c46604ab4fb04c28c3fe623f8
-      internalID: -348783322
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_Walk_3
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 0
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0a9c3f617db8de64092b9eeb4e6d42b9
-      internalID: 2106135995
+      spriteID: 4f43d8f52d28f5748a14e92df358a843
+      internalID: -746682719
       vertices: []
       indices: 
       edges: []
@@ -261,10 +219,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Character_Walk_0: 985424013
-      Character_Walk_1: -1979473767
-      Character_Walk_2: -348783322
-      Character_Walk_3: 2106135995
+      Green_Astronout_Idle_0: -1356354845
+      Green_Astronout_Idle_1: -746682719
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
