@@ -21,16 +21,20 @@ public class InteractionDetector : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.TryGetComponent(out IInteractables interactable) && interactable.CanInteract())
+        if(other.TryGetComponent(out IInteractables interactable))
         {
             _interactablesInRange.Add(interactable);
             InteractionKeyObj.SetActive(true);
         }
 
-        if(other.CompareTag("Collectible"))
+        if(other.CompareTag("Collectible") && other.TryGetComponent(out CollectibleObject collectible))
         {
+            other.tag = "Usable";
+
             // Collect it and destroy. Additionally, hover the collectibles around the player...
-            Destroy(other.gameObject);
+            // Destroy(other.gameObject);
+
+            collectible.Collect();
         }
     }
 
@@ -47,16 +51,19 @@ public class InteractionDetector : MonoBehaviour
     {
         if (_interactablesInRange.Count > 0)
         {
-            InteractionKeyObj.SetActive(false);
-
             var interactable = _interactablesInRange[0];
 
-            // Must be checked
-            interactable.Interact();
-
-            if (!interactable.CanInteract())
+            if(interactable.CanInteract())
             {
-                _interactablesInRange.Remove(interactable);
+                InteractionKeyObj.SetActive(false);
+
+                // Must be checked
+                interactable.Interact();
+
+                if (!interactable.CanInteract())
+                {
+                    _interactablesInRange.Remove(interactable);
+                }
             }
         }
     }

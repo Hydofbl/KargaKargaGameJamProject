@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum UsableItems
+public enum CollectibleItemTypes
 {
     None,
     RedKeyCard,
@@ -14,7 +14,7 @@ public enum UsableItems
 
 public class UseItemInteraction : MonoBehaviour, IInteractables
 {
-    public UsableItems NeededItem;
+    public CollectibleItemTypes NeededItemType;
     public bool IsUsed;
     
     private Animator _animator;
@@ -26,8 +26,8 @@ public class UseItemInteraction : MonoBehaviour, IInteractables
 
     public bool CanInteract()
     {
-        // Check inventory if the user has the key
-        return !IsUsed;
+        // Check if it did not used or inventory contains the needed item type
+        return !IsUsed || InventoryManager.Instance.PlayerInventoryDict.ContainsKey(NeededItemType);
     }
 
     public void Interact()
@@ -35,14 +35,15 @@ public class UseItemInteraction : MonoBehaviour, IInteractables
         // Interact
         IsUsed = true;
 
-        if(NeededItem != UsableItems.None)
+        if(NeededItemType != CollectibleItemTypes.None)
         {
             // Remove the item from the inventory
+            Destroy(InventoryManager.Instance.PlayerInventoryDict[NeededItemType]);
+            InventoryManager.Instance.PlayerInventoryDict.Remove(NeededItemType);
         }
-
-        Debug.Log("hello");
 
         // User Trigger
         //_animator.SetBool("PlayUsing", true);
+        Destroy(gameObject);
     }
 }
