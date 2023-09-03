@@ -181,8 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3661f8008df194145acf7c0e375c7d8a
-      internalID: 492993805
+      spriteID: 71ec1f20afd5cc94a966612837c693eb
+      internalID: -94840408
       vertices: []
       indices: 
       edges: []
@@ -202,8 +202,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f05489caeb67414091ffabb4aa91136
-      internalID: -11496365
+      spriteID: f00cbabe0feee5648bcf359385279f7d
+      internalID: 1808622779
       vertices: []
       indices: 
       edges: []
@@ -219,8 +219,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      White_Astronout_Idle_0: 492993805
-      White_Astronout_Idle_1: -11496365
+      White_Astronout_Idle_0: -94840408
+      White_Astronout_Idle_1: 1808622779
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
