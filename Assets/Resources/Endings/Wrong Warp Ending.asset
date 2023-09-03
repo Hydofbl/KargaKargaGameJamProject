@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03640080fc034e24e93a2a1ab4204b03, type: 3}
+  m_Name: Wrong Warp Ending
+  m_EditorClassIdentifier: 
+  EndingName: Selfish One
+  EndingText: "\u201CWhat was the meaning of this, taken away from my warm, sweet
+    bed?\u201D he yelled. The astronaut looked at him and said, \u201CWell, if you
+    want,\u201D and started the teleporter again. \u201CFinally, I can sleep again.\u201D
+    When the shiny light and headache disappeared, he realized that something was
+    not right, and he was eaten by a weird space dinosaur.\u201D"
+  EndingSprite: {fileID: 0}

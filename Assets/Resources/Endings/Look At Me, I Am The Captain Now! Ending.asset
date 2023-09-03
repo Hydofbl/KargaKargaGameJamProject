@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03640080fc034e24e93a2a1ab4204b03, type: 3}
+  m_Name: Look At Me, I Am The Captain Now! Ending
+  m_EditorClassIdentifier: 
+  EndingName: Selfish One
+  EndingText: "\u201CMain Character realized what had happened. That clock kept going
+    down and down until it hit one. Wait, one? It must be a mistake! Which watch
+    stops at one? Main Character was angry. With this anger, he punched the watch
+    as hard as he could! Oh, look! The watch works again. That means everything will
+    be alrig-.\u201D"
+  EndingSprite: {fileID: 0}
