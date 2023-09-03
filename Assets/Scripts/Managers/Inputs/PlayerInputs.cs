@@ -73,6 +73,15 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
+                    ""name"": ""Exit"",
+                    ""type"": ""Button"",
+                    ""id"": ""7a4ed78d-fddd-4f88-94d4-cfd71aef65b2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
                     ""name"": ""Interact"",
                     ""type"": ""Button"",
                     ""id"": ""69349d98-7798-4975-8dc7-00cc310ec7ed"",
@@ -287,6 +296,17 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
                     ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""57d19319-8332-497d-94b2-9ba10bb4f288"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Exit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -328,6 +348,7 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
         m_PlayerInput_RightClick = m_PlayerInput.FindAction("RightClick", throwIfNotFound: true);
         m_PlayerInput_ShiftHold = m_PlayerInput.FindAction("ShiftHold", throwIfNotFound: true);
         m_PlayerInput_Jump = m_PlayerInput.FindAction("Jump", throwIfNotFound: true);
+        m_PlayerInput_Exit = m_PlayerInput.FindAction("Exit", throwIfNotFound: true);
         m_PlayerInput_Interact = m_PlayerInput.FindAction("Interact", throwIfNotFound: true);
         m_PlayerInput_MouseX = m_PlayerInput.FindAction("MouseX", throwIfNotFound: true);
         m_PlayerInput_MouseY = m_PlayerInput.FindAction("MouseY", throwIfNotFound: true);
@@ -400,6 +421,7 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
     private readonly InputAction m_PlayerInput_RightClick;
     private readonly InputAction m_PlayerInput_ShiftHold;
     private readonly InputAction m_PlayerInput_Jump;
+    private readonly InputAction m_PlayerInput_Exit;
     private readonly InputAction m_PlayerInput_Interact;
     private readonly InputAction m_PlayerInput_MouseX;
     private readonly InputAction m_PlayerInput_MouseY;
@@ -412,6 +434,7 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
         public InputAction @RightClick => m_Wrapper.m_PlayerInput_RightClick;
         public InputAction @ShiftHold => m_Wrapper.m_PlayerInput_ShiftHold;
         public InputAction @Jump => m_Wrapper.m_PlayerInput_Jump;
+        public InputAction @Exit => m_Wrapper.m_PlayerInput_Exit;
         public InputAction @Interact => m_Wrapper.m_PlayerInput_Interact;
         public InputAction @MouseX => m_Wrapper.m_PlayerInput_MouseX;
         public InputAction @MouseY => m_Wrapper.m_PlayerInput_MouseY;
@@ -439,6 +462,9 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
             @Jump.started += instance.OnJump;
             @Jump.performed += instance.OnJump;
             @Jump.canceled += instance.OnJump;
+            @Exit.started += instance.OnExit;
+            @Exit.performed += instance.OnExit;
+            @Exit.canceled += instance.OnExit;
             @Interact.started += instance.OnInteract;
             @Interact.performed += instance.OnInteract;
             @Interact.canceled += instance.OnInteract;
@@ -467,6 +493,9 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
             @Jump.started -= instance.OnJump;
             @Jump.performed -= instance.OnJump;
             @Jump.canceled -= instance.OnJump;
+            @Exit.started -= instance.OnExit;
+            @Exit.performed -= instance.OnExit;
+            @Exit.canceled -= instance.OnExit;
             @Interact.started -= instance.OnInteract;
             @Interact.performed -= instance.OnInteract;
             @Interact.canceled -= instance.OnInteract;
@@ -546,6 +575,7 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
         void OnRightClick(InputAction.CallbackContext context);
         void OnShiftHold(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
+        void OnExit(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
         void OnMouseX(InputAction.CallbackContext context);
         void OnMouseY(InputAction.CallbackContext context);

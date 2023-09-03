@@ -16,5 +16,5 @@ MonoBehaviour:
   EndingText: And I became death, destroyer of this starship!" he yelled while throwing
     the bomb. But something was wrong, and he found himself in space after the explosion.
     He was the imposter after all.
-  EndingSprite: {fileID: 0}
+  EndingSprite: {fileID: 21300000, guid: 773146f52b89a3344a68f48d418537f2, type: 3}
   isGathered: 0

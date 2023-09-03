@@ -16,5 +16,5 @@ MonoBehaviour:
   EndingText: "\u201CAs the door slowly opened, the Main Character felt excited.
     \"Which room are we going to now? What different things will happen? New adventures,
     new excitement!\" And then he fell into the disposal room.\u201D"
-  EndingSprite: {fileID: 0}
+  EndingSprite: {fileID: 21300000, guid: b4e9aa7d47587d044b54043a9f92255a, type: 3}
   isGathered: 0

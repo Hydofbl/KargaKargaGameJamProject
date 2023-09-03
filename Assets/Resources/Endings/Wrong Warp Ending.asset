@@ -18,5 +18,5 @@ MonoBehaviour:
     want,\u201D and started the teleporter again. \u201CFinally, I can sleep again.\u201D
     When the shiny light and headache disappeared, he realized that something was
     not right, and he was eaten by a weird space dinosaur.\u201D"
-  EndingSprite: {fileID: 0}
+  EndingSprite: {fileID: 21300000, guid: 734f2cdf4642a8d4eb351ff4faa20dbe, type: 3}
   isGathered: 0

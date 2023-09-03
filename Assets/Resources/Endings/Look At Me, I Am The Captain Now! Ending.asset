@@ -18,5 +18,5 @@ MonoBehaviour:
     stops at one? Main Character was angry. With this anger, he punched the watch
     as hard as he could! Oh, look! The watch works again. That means everything will
     be alrig-.\u201D"
-  EndingSprite: {fileID: 0}
+  EndingSprite: {fileID: 21300000, guid: b38221854d9f7ae468244f10b35c7f82, type: 3}
   isGathered: 0

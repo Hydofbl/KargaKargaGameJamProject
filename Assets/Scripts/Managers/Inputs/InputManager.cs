@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class InputManager : MonoBehaviour {
 
@@ -112,6 +113,9 @@ public class InputManager : MonoBehaviour {
 
         // Use
         playerInput.Interact.performed += _ => OnInteracting?.Invoke();
+
+
+        playerInput.Exit.performed += _ => SceneManager.LoadScene("MainMenuScene");
         #endregion
 
         #region UI Inputs

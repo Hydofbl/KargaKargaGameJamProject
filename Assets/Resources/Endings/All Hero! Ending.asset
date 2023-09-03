@@ -17,4 +17,5 @@ MonoBehaviour:
     big, red, and shiny button had to stop the destruction! He rushed to the button
     and pressed it. One last tick, and the countdown was stopped. He was the one
     who had rescued this starship; he was the hero!
-  EndingSprite: {fileID: 0}
+  EndingSprite: {fileID: 21300000, guid: 7ff302b3928990f4aa4c83e15a949ec3, type: 3}
+  isGathered: 0
