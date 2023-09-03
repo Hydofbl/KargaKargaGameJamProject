@@ -7,8 +7,12 @@ public class InteractionDetector : MonoBehaviour
     public GameObject InteractionKeyObj;
     private List<IInteractables> _interactablesInRange = new List<IInteractables>();
 
+    private Rigidbody2D _rb;
+
     private void Start()
     {
+        _rb = GetComponent<Rigidbody2D>();
+
         InputManager.Instance.OnInteracting += OnInteracting;
 
         InteractionKeyObj.SetActive(false);
@@ -59,6 +63,8 @@ public class InteractionDetector : MonoBehaviour
 
                 // Must be checked
                 interactable.Interact();
+
+                _rb.velocity = Vector2.zero;
 
                 if (!interactable.CanInteract())
                 {
