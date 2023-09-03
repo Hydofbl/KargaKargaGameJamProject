@@ -47,7 +47,7 @@ public class InputManager : MonoBehaviour {
     public delegate void ActionHandler();
     public event ActionHandler OnJumpButtonPressed;
     public event ActionHandler OnJumpButtonReleased;
-    public event ActionHandler OnUsing;
+    public event ActionHandler OnInteracting;
     #endregion
     #endregion
 
@@ -105,7 +105,7 @@ public class InputManager : MonoBehaviour {
         playerInput.Jump.canceled += _ => JumpEnded();
 
         // Use
-        playerInput.Use.performed += _ => OnUsing?.Invoke();
+        playerInput.Interact.performed += _ => OnInteracting?.Invoke();
     }
 
     private void Start()
