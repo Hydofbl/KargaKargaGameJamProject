@@ -181,8 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 477b424ac501bfc4693e9fc2c5502ca7
-      internalID: -1146729942
+      spriteID: e2800887fe419a1489244dfe3b3bb183
+      internalID: 247441258
       vertices: []
       indices: 
       edges: []
@@ -202,8 +202,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56e0dffefcd7ffc45a4b71328fa5a0ce
-      internalID: 763686639
+      spriteID: 2f1054249f1164649a5f119971c5fa8b
+      internalID: 273435441
       vertices: []
       indices: 
       edges: []
@@ -223,8 +223,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a992b70a84029aa46afddbea1645496b
-      internalID: 264716677
+      spriteID: df84a3e1fffb06646bbccb738e1598e5
+      internalID: -1829453808
       vertices: []
       indices: 
       edges: []
@@ -244,8 +244,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92b8f63f32d2a1f40b4038817221812f
-      internalID: 1955344145
+      spriteID: 199bbc44189ac5e478e57e8db5d14538
+      internalID: -1979212812
       vertices: []
       indices: 
       edges: []
@@ -265,8 +265,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3a00564ce1c78a49837b41ffeaaa607
-      internalID: 1370121609
+      spriteID: 95bc51542e430f24896534b3f0987b05
+      internalID: -1694635832
       vertices: []
       indices: 
       edges: []
@@ -286,8 +286,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8975f9681f1b6ec48ab2240416ca3687
-      internalID: -1425907176
+      spriteID: 1a20f8421b815fe488ba5da62a2ca26d
+      internalID: -839713738
       vertices: []
       indices: 
       edges: []
@@ -303,12 +303,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PC_Idle_0: -1146729942
-      PC_Idle_1: 763686639
-      PC_Idle_2: 264716677
-      PC_Idle_3: 1955344145
-      PC_Idle_4: 1370121609
-      PC_Idle_5: -1425907176
+      PC_Idle_0: 247441258
+      PC_Idle_1: 273435441
+      PC_Idle_2: -1829453808
+      PC_Idle_3: -1979212812
+      PC_Idle_4: -1694635832
+      PC_Idle_5: -839713738
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
