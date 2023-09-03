@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03640080fc034e24e93a2a1ab4204b03, type: 3}
   m_Name: Emergency Door Ending
   m_EditorClassIdentifier: 
-  EndingName: Selfish One
+  EndingName: Emergency Door
   EndingText: "\u201CWhile the door slowly opened, the main character was excited.
     \"I guess this time I'll escape from this spaceship,\" he said. And he vacuumed
     away.\u201D"
   EndingSprite: {fileID: 0}
+  isGathered: 1

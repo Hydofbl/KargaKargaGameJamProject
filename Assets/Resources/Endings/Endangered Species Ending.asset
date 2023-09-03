@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03640080fc034e24e93a2a1ab4204b03, type: 3}
   m_Name: Endangered Species Ending
   m_EditorClassIdentifier: 
-  EndingName: Selfish One
+  EndingName: Endangered Species
   EndingText: '"I can save you! I know they locked you up because they''re the bad
     guys!" he said. When the chamber slowly opened, he saw this beautiful alien.
     "Oh my, you poor thing. Let me help you," and then he got eaten.'

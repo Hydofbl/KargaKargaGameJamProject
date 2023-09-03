@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03640080fc034e24e93a2a1ab4204b03, type: 3}
   m_Name: My Friend Petro Ending
   m_EditorClassIdentifier: 
-  EndingName: Selfish One
+  EndingName: My Friend Petro
   EndingText: "\u201CPetro felt the cool breeze on his skin, the feeling of remembrance,
     and the immense possibility of the new path before him. This was exactly the
     time, right now, when things were meant to happen. And Petro was happy.\u201D"
   EndingSprite: {fileID: 0}
+  isGathered: 0

@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class EndingManager : MonoBehaviour
@@ -23,6 +24,16 @@ public class EndingManager : MonoBehaviour
         {
             _instance = this;
         }
+
+        InputManager.Instance.OnPassButtonPressed += Instance_OnPassButtonPressed;
+    }
+
+    private void Instance_OnPassButtonPressed()
+    {
+        if(endingPage.activeSelf)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 
     public void SetEndingPage(EndingsScriptableObject ending)
@@ -30,6 +41,8 @@ public class EndingManager : MonoBehaviour
         endingName.text = ending.name;
         endingText.text = ending.EndingText;
         endingImage.sprite = ending.EndingSprite;
+
+        ending.isGathered = true;
     }
 
     public void ActivateEnding()

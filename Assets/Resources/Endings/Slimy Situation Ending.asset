@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03640080fc034e24e93a2a1ab4204b03, type: 3}
   m_Name: Slimy Situation Ending
   m_EditorClassIdentifier: 
-  EndingName: Selfish One
+  EndingName: Slimy Situation
   EndingText: "\u201CAs the door slowly opened, the Main Character felt excited.
     \"Which room are we going to now? What different things will happen? New adventures,
     new excitement!\" And then he fell into the disposal room.\u201D"
   EndingSprite: {fileID: 0}
+  isGathered: 0
