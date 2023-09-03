@@ -10,10 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf5807f746444e84ca305fb38cb0921d, type: 3}
-  m_Name: NPCDialogExample
+  m_Name: Dialog Object
   m_EditorClassIdentifier: 
-  NPCName: NPC
-  DialogLines:
-  - "Hewwo Thewe\t"
-  - Genewal Kenobwi
-  - Aaaaaahhh
+  NPCName: 
+  DialogLines: []
+  LineIndex: 0

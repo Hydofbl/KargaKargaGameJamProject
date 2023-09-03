@@ -16,7 +16,8 @@ public class UseItemInteraction : MonoBehaviour, IInteractables
 {
     public CollectibleItemTypes NeededItemType;
     public bool IsUsed;
-    
+    public BoxCollider2D CollisionCollider;
+
     private Animator _animator;
 
     private void Start()
@@ -43,7 +44,12 @@ public class UseItemInteraction : MonoBehaviour, IInteractables
         }
 
         // User Trigger
-        //_animator.SetBool("PlayUsing", true);
-        Destroy(gameObject);
+        _animator.SetTrigger("Use");
+
+        // Make door's and similar object's collision colliders disable
+        if(CollisionCollider != null)
+        {
+            CollisionCollider.enabled = false;
+        }
     }
 }
