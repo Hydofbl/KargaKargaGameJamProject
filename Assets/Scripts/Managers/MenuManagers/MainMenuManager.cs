@@ -12,6 +12,11 @@ public class MainMenuManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    public void GoToEndings()
+    {
+        SceneManager.LoadScene("EndingsShowcaseScene");
+    }
+
     //Opens Options Menu
     public void OpenOptions()
     {

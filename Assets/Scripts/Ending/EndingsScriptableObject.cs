@@ -13,4 +13,6 @@ public class EndingsScriptableObject : ScriptableObject
     public string EndingText;
 
     public Sprite EndingSprite;
+
+    public bool isGathered;
 }
