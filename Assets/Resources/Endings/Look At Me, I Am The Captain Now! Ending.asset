@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03640080fc034e24e93a2a1ab4204b03, type: 3}
   m_Name: Look At Me, I Am The Captain Now! Ending
   m_EditorClassIdentifier: 
-  EndingName: Selfish One
+  EndingName: Look At Me, I Am The Captain Now!
   EndingText: "\u201CMain Character realized what had happened. That clock kept going
     down and down until it hit one. Wait, one? It must be a mistake! Which watch
     stops at one? Main Character was angry. With this anger, he punched the watch

@@ -17,3 +17,4 @@ MonoBehaviour:
     Pod, but wait, does he know how to use it? His selfish thoughts were absolutely
     wrong! He needs to rescue this ship! He must immediately exit this escape pod-
   EndingSprite: {fileID: 0}
+  isGathered: 0
