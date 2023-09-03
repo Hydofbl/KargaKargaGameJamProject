@@ -28,7 +28,10 @@ public class UseItemInteraction : MonoBehaviour, IInteractables
     public bool CanInteract()
     {
         // Check if it did not used or inventory contains the needed item type
-        return !IsUsed || InventoryManager.Instance.PlayerInventoryDict.ContainsKey(NeededItemType);
+        if (NeededItemType != CollectibleItemTypes.None)
+            return !IsUsed && InventoryManager.Instance.PlayerInventoryDict.ContainsKey(NeededItemType);
+        else
+            return !IsUsed;
     }
 
     public void Interact()
