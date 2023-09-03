@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 40351f27d34822544bf76550ba110986
+guid: bbc02a67c8ed4d143b1509e9c07ce8f3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 14
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -167,7 +167,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Green_Astronout_Idle_0
+      name: Brown_Astronout_Idle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -181,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a99019a43cda32f4586acf315fdf6947
-      internalID: 969044237
+      spriteID: 2dad7cb1f8bba294a816b981cf254aee
+      internalID: -1576213869
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Green_Astronout_Idle_1
+      name: Brown_Astronout_Idle_1
       rect:
         serializedVersion: 2
         x: 24
@@ -202,8 +202,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd0f2700b1a377e43866923f63c8f66b
-      internalID: 1482339353
+      spriteID: 9a3820170bd8c72458da0e8b23219c1a
+      internalID: 1628092198
       vertices: []
       indices: 
       edges: []
@@ -219,8 +219,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Green_Astronout_Idle_0: 969044237
-      Green_Astronout_Idle_1: 1482339353
+      Brown_Astronout_Idle_0: -1576213869
+      Brown_Astronout_Idle_1: 1628092198
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

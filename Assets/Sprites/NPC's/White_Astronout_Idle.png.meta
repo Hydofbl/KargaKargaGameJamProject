@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 37ed96eba649124439b288997ab2beda
+guid: 6ae425d23d91149438962a995a7b7aee
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 14
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -167,7 +167,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Viyuviyu_box_0
+      name: White_Astronout_Idle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -181,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0eba248b64ca3242a72fa28b03f9c57
-      internalID: 1368060190
+      spriteID: 71ec1f20afd5cc94a966612837c693eb
+      internalID: -94840408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Viyuviyu_box_1
+      name: White_Astronout_Idle_1
       rect:
         serializedVersion: 2
         x: 24
@@ -202,29 +202,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a27bfd062bc9ecf49b32d634ff994536
-      internalID: 564173994
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Viyuviyu_box_2
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb9cfe9726d76c84f8896dfb69136e07
-      internalID: 680845032
+      spriteID: f00cbabe0feee5648bcf359385279f7d
+      internalID: 1808622779
       vertices: []
       indices: 
       edges: []
@@ -240,9 +219,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Viyuviyu_box_0: 1368060190
-      Viyuviyu_box_1: 564173994
-      Viyuviyu_box_2: 680845032
+      White_Astronout_Idle_0: -94840408
+      White_Astronout_Idle_1: 1808622779
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
