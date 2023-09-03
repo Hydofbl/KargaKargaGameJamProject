@@ -17,3 +17,4 @@ MonoBehaviour:
     the bomb. But something was wrong, and he found himself in space after the explosion.
     He was the imposter after all.
   EndingSprite: {fileID: 0}
+  isGathered: 0
