@@ -28,11 +28,11 @@ public class InventoryManager : MonoBehaviour
     private void Update()
     {
         size = PlayerInventoryDict.Count;
-        int i = 0;
-        foreach(var item in PlayerInventoryDict)
-        {
-            item.Value.transform.position = InventoryParent.transform.position + new Vector3(i , i, 0);
-            i++;
-        }
+    }
+
+    public void AddInventory(CollectibleItemTypes type, GameObject item)
+    {
+        item.transform.SetParent(InventoryParent.transform, false);
+        PlayerInventoryDict.Add(type, item);
     }
 }

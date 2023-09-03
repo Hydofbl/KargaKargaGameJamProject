@@ -1,16 +1,17 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CollectibleObject : MonoBehaviour
 {
     public CollectibleItemTypes ItemType;
 
+    public GameObject ItemPrefab;
+
     public void Collect()
     {
-        InventoryManager.Instance.PlayerInventoryDict.Add(ItemType, gameObject);
-    }
+        GameObject collectedItem = Instantiate(ItemPrefab);
+        InventoryManager.Instance.AddInventory(ItemType, collectedItem);
 
-    public void Use()
-    {
         Destroy(gameObject);
     }
 }
