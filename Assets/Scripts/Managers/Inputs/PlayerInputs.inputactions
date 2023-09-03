@@ -273,9 +273,9 @@
             "id": "6805afea-9489-4669-bf4a-4e6c51ca7261",
             "actions": [
                 {
-                    "name": "New action",
+                    "name": "Pass",
                     "type": "Button",
-                    "id": "fb09614e-b97c-4341-a24b-81712f36bd1d",
+                    "id": "85d5ae95-6d25-4ba6-a76b-9a77cd067758",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -285,12 +285,12 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "b73bd5ef-68b1-44c1-b039-c158a3746828",
-                    "path": "",
+                    "id": "4f983e86-d523-406a-8ac6-de863f8462e6",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "Pass",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

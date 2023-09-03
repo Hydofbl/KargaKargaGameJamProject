@@ -16,9 +16,9 @@ public class InputManager : MonoBehaviour {
     private RaycastHit hit;
 
     // Booleans
-    public bool isMovable;
-    public bool isLeftMouseDown;
-    public bool isRightMouseDown;
+    public bool IsMovable;
+    public bool IsLeftMouseDown;
+    public bool IsRightMouseDown;
 
     #region Delegates and Events
     #region Mouse Click delegate and events
@@ -49,6 +49,11 @@ public class InputManager : MonoBehaviour {
     public event ActionHandler OnJumpButtonReleased;
     public event ActionHandler OnInteracting;
     #endregion
+
+    #region UI delegates and events
+    public delegate void UIHandler();
+    public event UIHandler OnPassButtonPressed;
+    #endregion
     #endregion
 
     // Public Properties
@@ -70,14 +75,15 @@ public class InputManager : MonoBehaviour {
             _instance = this;
         }
 
-        isMovable = true;
-        isLeftMouseDown = false;
-        isRightMouseDown = false;
+        IsMovable = true;
+        IsLeftMouseDown = false;
+        IsRightMouseDown = false;
 
         controls = new PlayerInputs();
         playerInput = controls.PlayerInput;
         UIInput = controls.UIInput;
 
+        #region Player Inputs
         // Horizontal player movement
         playerInput.Movement.performed += ctx => movementInput = ctx.ReadValue<Vector2>();
         playerInput.Movement.canceled += ctx => movementInput = Vector2.zero;
@@ -98,7 +104,7 @@ public class InputManager : MonoBehaviour {
         playerInput.RightClick.performed += _ => RightClickPerformed();
 
         // Has 0.4 seconds hold interaction in it
-        playerInput.ShiftHold.performed += _ => isMovable = !isMovable;
+        playerInput.ShiftHold.performed += _ => IsMovable = !IsMovable;
 
         // Jump
         playerInput.Jump.started += _ => JumpStarted();
@@ -106,6 +112,11 @@ public class InputManager : MonoBehaviour {
 
         // Use
         playerInput.Interact.performed += _ => OnInteracting?.Invoke();
+        #endregion
+
+        #region UI Inputs
+        UIInput.Pass.performed += _ => OnPassButtonPressed?.Invoke();
+        #endregion
     }
 
     private void Start()
@@ -116,7 +127,7 @@ public class InputManager : MonoBehaviour {
 
     private void Update ()
     {
-        if (isMovable)
+        if (IsMovable)
         {
             OnMove?.Invoke(movementInput);
         }
@@ -126,12 +137,12 @@ public class InputManager : MonoBehaviour {
         }
 
         // Mouse button holding triggers
-        if (isLeftMouseDown)
+        if (IsLeftMouseDown)
         {
             OnLeftMouseHolding?.Invoke();
         }
 
-        if(isRightMouseDown)
+        if(IsRightMouseDown)
         {
             OnRightMouseHolding?.Invoke(); 
         }
@@ -139,7 +150,7 @@ public class InputManager : MonoBehaviour {
 
     private void JumpStarted()
     {
-        if(isMovable)
+        if(IsMovable)
         {
             OnJumpButtonPressed?.Invoke();
         }
@@ -147,7 +158,7 @@ public class InputManager : MonoBehaviour {
     
     private void JumpEnded()
     {
-        if(isMovable)
+        if(IsMovable)
         {
             OnJumpButtonReleased?.Invoke();
         }
@@ -156,7 +167,7 @@ public class InputManager : MonoBehaviour {
     private void LeftMouseButtonDown()
     {
         OnLeftMouseDown?.Invoke();
-        isLeftMouseDown = true;
+        IsLeftMouseDown = true;
 
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         if(Physics.Raycast(ray, out hit, 50000.0f))
@@ -168,7 +179,7 @@ public class InputManager : MonoBehaviour {
     private void LeftMouseButtonUp()
     {
         OnLeftMouseUp?.Invoke();
-        isLeftMouseDown = false;
+        IsLeftMouseDown = false;
 
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out hit, 50000.0f))

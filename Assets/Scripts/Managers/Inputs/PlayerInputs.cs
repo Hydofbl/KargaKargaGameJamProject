@@ -295,9 +295,9 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
             ""id"": ""6805afea-9489-4669-bf4a-4e6c51ca7261"",
             ""actions"": [
                 {
-                    ""name"": ""New action"",
+                    ""name"": ""Pass"",
                     ""type"": ""Button"",
-                    ""id"": ""fb09614e-b97c-4341-a24b-81712f36bd1d"",
+                    ""id"": ""85d5ae95-6d25-4ba6-a76b-9a77cd067758"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -307,12 +307,12 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""b73bd5ef-68b1-44c1-b039-c158a3746828"",
-                    ""path"": """",
+                    ""id"": ""4f983e86-d523-406a-8ac6-de863f8462e6"",
+                    ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""New action"",
+                    ""action"": ""Pass"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -333,7 +333,7 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
         m_PlayerInput_MouseY = m_PlayerInput.FindAction("MouseY", throwIfNotFound: true);
         // UIInput
         m_UIInput = asset.FindActionMap("UIInput", throwIfNotFound: true);
-        m_UIInput_Newaction = m_UIInput.FindAction("New action", throwIfNotFound: true);
+        m_UIInput_Pass = m_UIInput.FindAction("Pass", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -497,12 +497,12 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
     // UIInput
     private readonly InputActionMap m_UIInput;
     private List<IUIInputActions> m_UIInputActionsCallbackInterfaces = new List<IUIInputActions>();
-    private readonly InputAction m_UIInput_Newaction;
+    private readonly InputAction m_UIInput_Pass;
     public struct UIInputActions
     {
         private @PlayerInputs m_Wrapper;
         public UIInputActions(@PlayerInputs wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Newaction => m_Wrapper.m_UIInput_Newaction;
+        public InputAction @Pass => m_Wrapper.m_UIInput_Pass;
         public InputActionMap Get() { return m_Wrapper.m_UIInput; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -512,16 +512,16 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_UIInputActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_UIInputActionsCallbackInterfaces.Add(instance);
-            @Newaction.started += instance.OnNewaction;
-            @Newaction.performed += instance.OnNewaction;
-            @Newaction.canceled += instance.OnNewaction;
+            @Pass.started += instance.OnPass;
+            @Pass.performed += instance.OnPass;
+            @Pass.canceled += instance.OnPass;
         }
 
         private void UnregisterCallbacks(IUIInputActions instance)
         {
-            @Newaction.started -= instance.OnNewaction;
-            @Newaction.performed -= instance.OnNewaction;
-            @Newaction.canceled -= instance.OnNewaction;
+            @Pass.started -= instance.OnPass;
+            @Pass.performed -= instance.OnPass;
+            @Pass.canceled -= instance.OnPass;
         }
 
         public void RemoveCallbacks(IUIInputActions instance)
@@ -552,6 +552,6 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
     }
     public interface IUIInputActions
     {
-        void OnNewaction(InputAction.CallbackContext context);
+        void OnPass(InputAction.CallbackContext context);
     }
 }
